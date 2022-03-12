@@ -20,46 +20,68 @@
     </header>
 
 
+
+
     <main>
 
-        <select id='water dropdown'>
-            <option value="water one">Water One</option>
-            <option value="water two">Water Two</option>
-            <option value="water three">Water Three</option>
-        </select>
+        <div class='user-inputs'>
 
-        <select id='castle dropdown'>
-            <option value="castle one">Castle One</option>
-            <option value="castle two ">Castle Two</option>
-            <option value="castle three">Castle Three</option>
-        </select>
+            <div class='city-name-input'>
+                <label for='user-city-name'>City Name</label>
+                <input type='' id='user-city-name'>
+            </div>
 
-        <select id='skyline dropdown'>
-            <option value='skyline one'>Skyline One</option>
-            <option value='skyline two'>Skyline Two</option>
-            <option value='skyline three'>Skyline Three</option>
-        </select>
+            <div class='sloganName'>
+                <label for='slogan'>Slogan</label>
+                <input type='text' id='slogan-input'/>
+                <button id='slogan-button'>Submit</button>
+            </div>
 
-        <section id="city name">
-            <label for="city name inputted">City Name</label>
-            <input type="" id="city name inputted">
-        </section>
+            <div class='slogans'>
+                <p> List of slogans</p>
+            </div>
 
-        <section id="slogan name">
-            <label for="slogan name inputted">Slogan</label>
-            <input type="" id="slogan name inputted">
-        </section>
+            <div class='dropdownMenu'>
 
-        <section id="default images">
-            <img src ="assets/castle-1.jpg"/>
-            <img src= "assets/skyline-1.jpg"/>
-            <img src="assets/water-1.jpg"/>
-        </section>
+                <select id='waterDropDown'>
+                    <option value='water-one'>Water One</option>
+                    <option value='water-two'>Water Two</option>
+                    <option value='water-three'>Water Three</option>
+                </select>
 
-        <section id="list of slogans">
-        </section>
+                <select id='castleDropDown'>
+                    <option value='1'>Castle One</option>
+                    <option value='2'>Castle Two</option>
+                    <option value='3'>Castle Three</option>
+                </select>
+
+                <select id='skylineDropdown'>
+                    <option value='1'>Skyline One</option>
+                    <option value='2'>Skyline Two</option>
+                    <option value='3'>Skyline Three</option>
+                </select>
+            </div>
+        </div>
+
+        <div class='welcomeToMessage'>
+            <p>Welcome to <span id='cityNameDisplay'></span>!</p>
+        </div>
+
+        <div class='count-status'>
+            <p class='count-status-message'>You changed the water <span id='waterCount'></span>times, the skyline <span id='castleCount'> </span>
+                times and the castle image <span id='skylineCount'> </span> times.</p>
+        </div>
+
+        <div class='defaultImages'>
+            <img class='images' id='castleImg' src='assets/castle-1.jpg' />
+            <img class='images' id='skylineImg' src='assets/skyline-1.jpg' />
+            <img class='images' id='waterImg' src='assets/water-water-one.jpg' />
+        </div>
 
     </main>
+
+
+
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>

@@ -38,7 +38,16 @@ main {
     align-items: center;
     margin-bottom: calc(var(--footer-height));
 }
+.images{
+    height: 200px;
+    width: 300px;
+    padding-bottom: 5%;
+}
 
+.defaultImages {
+    display: grid;
+    grid-template-rows:  1fr 1fr 1fr;
+}
 section {
     background-color: var(--color5);
     max-width: 80%;
@@ -90,6 +99,7 @@ footer {
     box-shadow: var(--shadow);
 }
 
-.default-images {
 
+.user-inputs {
+    box-sizing: border-box;
 }
