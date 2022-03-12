@@ -3,9 +3,9 @@ const waterDropDown = document.getElementById('waterDropDown');
 const castleDropdown = document.getElementById('castleDropDown');
 const skylineDropdown = document.getElementById('skylineDropdown');
 
-const waterCountEl = document.getElementById('waterCount');
+/*const waterCountEl = document.getElementById('waterCount');
 const skyLineCountEl = document.getElementById('skylineCount');
-const castleCountEl = document.getElementById('castleCount');
+const castleCountEl = document.getElementById('castleCount');*/
 
 const countStatusMessage = document.querySelector('.count-status-message');
 
@@ -20,8 +20,8 @@ const slogansEl = document.querySelector('.slogans');
 
  
 const cityNameDisplay = document.getElementById('user-city-name');
-const welcomeToMessage = document.querySelector('.welcomeToMessage');
-const userCityName = document.getElementById('user-city-name');
+/*const welcomeToMessage = document.querySelector('.welcomeToMessage');*/
+/*const userCityName = document.getElementById('user-city-name');*/
 
 const WelcomeMessage = document.getElementById('Welcome-Message');
 
