@@ -7,7 +7,7 @@ const waterCountEl = document.getElementById('waterCount');
 const skyLineCountEl = document.getElementById('skylineCount');
 const castleCountEl = document.getElementById('castleCount');
 
-const countStatusMessage = document.getElementById('count-status-message');
+const countStatusMessage = document.querySelector('.count-status-message');
 
 const waterImg = document.getElementById('waterImg');
 const skylineImg = document.getElementById('skylineImg');
@@ -18,8 +18,12 @@ const sloganInput = document.getElementById('slogan-input');
 
 const slogansEl = document.querySelector('.slogans');
 
+ 
+const cityNameDisplay = document.getElementById('user-city-name');
+const welcomeToMessage = document.querySelector('.welcomeToMessage');
+const userCityName = document.getElementById('user-city-name');
 
-
+const WelcomeMessage = document.getElementById('Welcome-Message');
 
 // let state
 let waterCount = 0;
@@ -35,6 +39,19 @@ let slogans = [];
   // update DOM to reflect the new state
 
 
+/*cityNameDisplay.addEventListener('change', () => {
+    let cityChosen = userCityName.value;
+    cityNameDisplay.textContent = `Welcome to ${cityChosen}`;
+}); */
+
+
+cityNameDisplay.addEventListener('change', () => {
+  // as a city is being typed into the city name, update the welcome message
+    const chosenCity = cityNameDisplay.value;
+    WelcomeMessage.textContent = `Welcome to ${chosenCity}`;
+});
+
+
 //water dropdown
 
 
@@ -42,20 +59,23 @@ waterDropDown.addEventListener('change', () => {
     const water = waterDropDown.value; // gets the value of which water image
   //when select water drop is selected, change water picture 
     waterImg.src = `./assets/water-${water}.jpg`;
-    waterCount++;
+    waterCount ++;
+    displayCountStats(); 
 });
 
 
 castleDropdown.addEventListener('change', () => {
     const castle = castleDropdown.value;
     castleImg.src = `./assets/castle-${castle}.jpg`;
-    castleCount++;
+    castleCount ++;
+    displayCountStats(); 
 });
 
 skylineDropdown.addEventListener('change', () => {
     const skyline = skylineDropdown.value;
     skylineImg.src = `./assets/skyline-${skyline}.jpg`;
-    skyLineCount++;
+    skyLineCount ++;
+    displayCountStats(); 
 });
 
 
@@ -77,17 +97,8 @@ function displaySlogans() {
     }
 }
 
-
-/*countStatusMessage.textContent = `You changed the water ${waterCount} times, the skyline
+function displayCountStats() {
+    countStatusMessage.textContent = `You changed the water ${waterCount} times, the skyline
     times ${skyLineCount} and the castle image ${castleCount} times.`;
+}
 
-/*displayCountStats() 
-
-
-displaySlogans();
-
-
-//attaches a string to the DOM describing how many times each dropdown has been changed
-
-
-//clears DOM, loops through slogans, displays slogans on the page */
