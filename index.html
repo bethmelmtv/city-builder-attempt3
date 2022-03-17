@@ -18,51 +18,71 @@
             <img src="./assets/big-logo.png" />
         </div>
     </header>
+
+
+
+
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+        <div class='user-inputs'>
 
-        </section>
+            <div class='city-name-input'>
+                <label for='user-city-name'>City Name</label>
+                <input type='' id='user-city-name'>
+            </div>
+
+            <div class='sloganName'>
+                <label for='slogan'>Slogan</label>
+                <input type='text' id='slogan-input' />
+                <button id='slogan-button'>Submit</button>
+            </div>
+
+            <div class='slogans'>
+                <p> List of slogans</p>
+            </div>
+
+            <div class='dropdownMenu'>
+
+                <select id='waterDropDown'>
+                    <option value='water-one'>Water One</option>
+                    <option value='water-two'>Water Two</option>
+                    <option value='water-three'>Water Three</option>
+                </select>
+
+                <select id='castleDropDown'>
+                    <option value='1'>Castle One</option>
+                    <option value='2'>Castle Two</option>
+                    <option value='3'>Castle Three</option>
+                </select>
+
+                <select id='skylineDropdown'>
+                    <option value='1'>Skyline One</option>
+                    <option value='2'>Skyline Two</option>
+                    <option value='3'>Skyline Three</option>
+                </select>
+            </div>
+        </div>
+
+        <div class='welcomeToMessage'>
+            <p id='Welcome-Message'>Welcome to <span id='cityNameDisplay'></span>!</p>
+        </div>
+
+        <div class='count-status'>
+            <p class='count-status-message'>You changed the water <span id='waterCount'> 0 </span>times, the skyline
+                <span id='castleCount'> 0 </span>times and the castle image <span id='skylineCount'> 0 </span> times.
+            </p>
+        </div>
+
+        <div class='defaultImages'>
+            <img class='images' id='castleImg' src='assets/castle-1.jpg' />
+            <img class='images' id='skylineImg' src='assets/skyline-1.jpg' />
+            <img class='images' id='waterImg' src='assets/water-water-one.jpg' />
+        </div>
+
     </main>
+
+
+
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
